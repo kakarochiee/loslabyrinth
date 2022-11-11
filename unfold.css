@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #28282B;
+}
+.yummy{
+    color: #fff;
+    font-family: Bebas Neue;
+}
+/*first sector*/
+.box
+{
+    width: 640px;
+    height: 360px;
+    transform: rotate(-25deg) skew(25deg);
+    transition: 0.5s;
+    display: flex;
+    position: relative;
+}
+.box:hover
+{
+    transform: rotate(-25deg) skew(25deg) translateY(-20px);
+}
+.box span
+{
+    width: 25%;
+    height: 100%;
+    background: url(unknown.png);
+    background-size: cover;
+    background-position: calc(-160px * var(--i));
+    display: block;
+    transition: 0.5s;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.box:hover span:nth-child(odd)
+{
+    transform: skewY(25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0.5);
+}
+.box:hover span:nth-child(even)
+{
+    transform: skewY(-25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0.5);
+}
+.box span:first-child
+{
+    border-left: 5px solid #fff;
+}
+.box span:last-child
+{
+    border-right: 5px solid #fff;
+}
+/*second sector*/
+.box1
+{
+    width: 640px;
+    height: 360px;
+    transform: rotate(-25deg) skew(25deg);
+    transition: 0.5s;
+    display: flex;
+    position: relative;
+}
+.box1:hover
+{
+    transform: rotate(-25deg) skew(25deg) translateY(-20px);
+}
+.box1 span
+{
+    width: 25%;
+    height: 100%;
+    background: url(unknown\ \(1\).png);
+    background-size: cover;
+    background-position: calc(-160px * var(--i));
+    display: block;
+    transition: 0.5s;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.box1:hover span:nth-child(odd)
+{
+    transform: skewY(25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0.5);
+}
+.box1:hover span:nth-child(even)
+{
+    transform: skewY(-25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0.5);
+}
+.box1 span:first-child
+{
+    border-left: 5px solid #fff;
+}
+.box1 span:last-child
+{
+    border-right: 5px solid #fff;
+}
+/*second sector*/
+.box2
+{
+    width: 640px;
+    height: 360px;
+    transform: rotate(-25deg) skew(25deg);
+    transition: 0.5s;
+    display: flex;
+    position: relative;
+}
+.box2:hover
+{
+    transform: rotate(-25deg) skew(25deg) translateY(-20px);
+}
+.box2 span
+{
+    width: 25%;
+    height: 100%;
+    background: url(grid-small.png);
+    background-size: cover;
+    background-position: calc(-160px * var(--i));
+    display: block;
+    transition: 0.5s;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.box2:hover span:nth-child(odd)
+{
+    transform: skewY(25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0.5);
+}
+.box2:hover span:nth-child(even)
+{
+    transform: skewY(-25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0.5);
+}
+.box2 span:first-child
+{
+    border-left: 5px solid #fff;
+}
+.box2 span:last-child
+{
+    border-right: 5px solid #fff;
+}

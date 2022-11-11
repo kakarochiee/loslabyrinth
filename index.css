@@ -1,0 +1,576 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+.container
+{
+    position: relative;
+}
+.container .card
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background-color: #232323;
+    border-radius: 20px;
+    overflow:hidden;
+}
+.container .card:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eec84c;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover:before
+{
+    clip-path: circle(300px at 80% -20%);
+}
+.container .card:after
+{
+    content: 'Los-';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+.container .card .imgBx
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+.container .card:hover .imgBx
+{
+    top: 0%;
+    transform: translateY(0%);
+}
+.container .card .imgBx img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 270px;
+}
+.container .card .contentBx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+.container .card:hover .contentBx
+{
+    height: 210px;
+}
+.container .card .contentBx h2
+{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.container .card .contentBx .Number,
+.container .card .contentBx .color
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .card:hover .contentBx .Number
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+.container .card:hover .contentBx .color
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.container .card .contentBx .Number h3,
+.container .card .contentBx .color h3
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.container .card .contentBx .Number span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container .card .contentBx .Number span:hover
+{
+    background: #dcd028;
+}
+.container .card .contentBx .color span
+{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.container .card .contentBx .color span:nth-child(2)
+{
+    background: #9bdc28;
+}
+.container .card .contentBx .color span:nth-child(3)
+{
+    background: #03a9f4;
+}
+.container .card .contentBx .color span:nth-child(4)
+{
+    background: #e91e63;
+}
+.container .card .contentBx a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.container .card:hover .contentBx a
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+/*female seg*/
+*
+{
+margin: 0;
+padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+.container1
+{
+    position: relative;
+}
+.container1 .card1
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background-color: #232323;
+    border-radius: 20px;
+    overflow:hidden;
+}
+.container1 .card1:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #db4ceebb;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container1 .card1:hover:before
+{
+    clip-path: circle(300px at 80% -20%);
+}
+.container1 .card1:after
+{
+    content: 'Laby';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+.container1 .card1 .imgBx1
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+.container1 .card1:hover .imgBx1
+{
+    top: 0%;
+    transform: translateY(0%);
+}
+.container1 .card1 .imgBx1 img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 270px;
+}
+.container1 .card1 .contentBx1
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+.container1 .card1:hover .contentBx1
+{
+    height: 210px;
+}
+.container1 .card1 .contentBx1 h2
+{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.container1 .card1 .contentBx1 .Number1,
+.container1 .card1 .contentBx1 .color1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.container1 .card1:hover .contentBx1 .Number1
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+.container1 .card1:hover .contentBx1 .color1
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.container1 .card1 .contentBx1 .Number1 h3,
+.container1 .card1 .contentBx1 .color1 h3
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.container1 .card1 .contentBx1 .Number1 span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container1 .card1 .contentBx1 .Number1 span:hover
+{
+    background: #dcd028;
+}
+.container1 .card1 .contentBx1 .color1 span
+{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.container1 .card1 .contentBx1 .color1 span:nth-child(2)
+{
+    background: #9bdc28;
+}
+.container1 .card1 .contentBx1 .color1 span:nth-child(3)
+{
+    background: #03a9f4;
+}
+.container1 .card1 .contentBx1 .color1 span:nth-child(4)
+{
+    background: #e91e63;
+}
+.container1 .card1 .contentBx1 a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.container1 .card1:hover .contentBx1 a
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/*female seg*/
+*
+{
+margin: 0;
+padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+.container2
+{
+    position: relative;
+}
+.container2 .card2
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background-color: #232323;
+    border-radius: 20px;
+    overflow:hidden;
+}
+.container2 .card2:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container2 .card2:hover:before
+{
+    clip-path: circle(300px at 80% -20%);
+}
+.container2 .card2:after
+{
+    content: 'Rinth';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+.container2 .card2 .imgBx2
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+.container2 .card2:hover .imgBx2
+{
+    top: 0%;
+    transform: translateY(0%);
+}
+.container2 .card2 .imgBx2 img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 270px;
+}
+.container2 .card2 .contentBx2
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+.container2 .card2:hover .contentBx2
+{
+    height: 210px;
+}
+.container2 .card2 .contentBx2 h2
+{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.container2 .card2 .contentBx2 .Number2,
+.container2 .card2 .contentBx2 .color2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.container2 .card2:hover .contentBx2 .Number2
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+.container2 .card2:hover .contentBx2 .color2
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.container2 .card2 .contentBx2 .Number2 h3,
+.container2 .card2 .contentBx2 .color2 h3
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.container2 .card2 .contentBx2 .Number2 span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container2 .card2 .contentBx2 .Number2 span:hover
+{
+    background: #dcd028;
+}
+.container2 .card2 .contentBx2 .color2 span
+{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.container2 .card2 .contentBx2 .color2 span:nth-child(2)
+{
+    background: #9bdc28;
+}
+.container2 .card2 .contentBx2 .color2 span:nth-child(3)
+{
+    background: #03a9f4;
+}
+.container2 .card2 .contentBx2 .color2 span:nth-child(4)
+{
+    background: #e91e63;
+}
+.container2 .card2 .contentBx2 a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.container2 .card2:hover .contentBx2 a
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}

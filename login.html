@@ -1,0 +1,38 @@
+<script language="javascript">
+
+function pasuser(form){
+if (form.id.value=="admin") {
+         if(form.pass.value=="123456789") {
+		 location="https://www.youtube.com/watch?v=cOyJaSSdohs"
+		 }else{
+		       alert("Invaild password")
+			   }
+			   }else{  alert("Invaild id")
+			}
+}
+</script>
+
+
+
+<table bgColor="#c1ad8f" border="0" width=350>
+<form name="login">
+<tr><td colspan="2" align=center height=30><b>login</b></td></tr>
+
+<tr bgColor=EEEEEE height=30>
+     <td><b>ID</b></td>
+	 <td align=center><input name=id type="text">
+	 </td>
+
+</tr>
+<tr bgColor=EEEEEE height=30>
+     <td><b>PW</b></td>
+	 <td align=center><input name=pass type="password"></td>
+	 
+<tr bgColor=EEEEEE height=30>
+     <td colspan=2 align=center>
+	 <input type="button" value="login" onClick="pasuser(this.form)">
+	 <input type="reset" value="retype">
+	 </td>	
+</tr>
+</form>
+</table>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charter="UFT-8">
+<title>arcade</title>
+<script>
+//arcade main context
+var arr =["학업의민족", "파인듀", "강남엄마"]
+var win = 0;
+var lose = 0;
+var draw =0;
+window.addEventListener("load",function(){
+var play =document.querySelector("#play");
+play.addEventListener("click",function(){
+var ran=Math.floor(Math.random()*3);
+var com = arr[ran];
+console.log(com);
+var my =document.querySelector("#rps").value;
+var output = document.querySelector("#output");
+if(""==my){
+alert("파인듀,학업의민족,강남엄마 중 하나만 선택해라.");
+}else{
+var result ="다시 생각해보세요"
+if (my ==com) {
+draw++;
+result ="학업의민족이 최곤데...골랐으면 말고 (무)";
+
+} else  if ((my =="학업의민족" && com == "강남엄마")
+|| (my == "학업의민족" && com == "파인듀")) {
+result = "역시 학업의 민족! (승)";
+win++
+
+} else  if ((my =="파인듀" && com == "강남엄마")
+|| (my == "강남엄마" && com == "파인듀")) {
+result = "이겨도 학업의 민족한텐 못 비빔ㅋ";
+win++
+
+} else  if ((my =="강남엄마" && com == "학업의민족")
+|| (my == "파인듀" && com == "학업의민족")) {
+result = "학업의 민족이였더라면 이겼을탠데... (패)";
+lose++
+}
+output.innerHTML += result + "\n" +win+ "승"
+       +draw +"무" +lose+"패 \n";
+      }
+    });
+});
+</script>
+</head>
+<body>
+<select id="rps">
+         <option value=" ">선택하시오</option>
+         <option value="학업의민족">학업의민족</option>
+         <option value="파인듀">파인듀</option>
+         <option value="강남엄마">강남엄마</option>
+</select>
+<input id="play" type ="button" value ="play">
+<br>
+<textarea id ="output" rows ="5" cols="30"></textarea>
+</body>
+</html>
